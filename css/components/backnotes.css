@@ -1,0 +1,24 @@
+.backnotes-link {
+    color: var(--backnotes-link-color);
+    font-weight: 700;
+    font-size: smaller;
+    text-decoration: none !important;
+  }
+  
+  .backnotes-link:hover {
+    color: var(--backnotes-link-color-hover);
+    transition: all 1s;
+  }
+  
+  .desc-person {
+    color: #456cb9;
+  }
+  
+  .backnotes {
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+    padding: 1rem;
+  }
+  
+  
