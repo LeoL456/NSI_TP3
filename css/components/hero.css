@@ -1,0 +1,163 @@
+.container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.center-hero {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.expl {
+  max-width: 710px;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.center-hero>.expl>a {
+  text-align: center;
+}
+
+.flex-space {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* Sélecteur — Page d'accueil */
+@media screen and (max-width:1350px) {
+  .selector-item {
+    width: 78% !important;
+  }
+
+  .selector-item:nth-child(1) {
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 0 !important;
+  }
+
+  .selector-item:nth-last-child(1) {
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-top-right-radius: 0 !important;
+  }
+
+  .selector {
+    display: flex !important;
+    flex-direction: column !important;
+    flex-wrap: wrap !important;
+    align-content: center !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 100% !important;
+    margin-top: 2rem !important;
+  }
+
+  .overlay-home {
+    backdrop-filter: blur(3px) !important;
+    -webkit-backdrop-filter: blur(3px) !important;
+  }
+}
+
+.selector {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.selector-item {
+  padding: 2rem;
+  width: calc(32% - 3rem);
+  height: 65vh;
+  border: 1px solid rgb(126, 126, 126);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: flex-end;
+  align-items: stretch;
+  position: relative;
+  z-index: 5;
+  overflow: hidden;
+}
+
+.selector-item:nth-child(1) {
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+.selector-item:nth-last-child(1) {
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.selector-content {
+  background-color: rgba(240, 248, 255, 0.355);
+  padding: 1.5rem;
+  border-radius: 5px;
+  z-index: 7;
+}
+
+.overlay-home {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.507);
+  z-index: 6;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.selector-item:hover {
+  transition: all 2s !important;
+}
+
+.selector-item:hover>.overlay-home {
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  transition: all 1s;
+}
+
+.selector-item:hover>.selector-content {
+  background-color: rgba(240, 248, 255, 0.575);
+  transition: all 1s;
+}
+
+.jobs {
+  background-image: url('https://cdn.profoto.com/cdn/053149e/contentassets/d39349344d004f9b8963df1551f24bf4/profoto-albert-watson-steve-jobs-pinned-image-original.jpg?width=2840&quality=75&format=jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.gates {
+  background-image: url('https://image.evoke.org/-/media/Images/Evoke/Contributors/BillGates/BillGates_Headshot.ashx?rev=e0ff333fd52a433a9f33fbd03797ad04&hash=E08025CD7B6E07214B21ED04F7251BD0');
+  background-position: center;
+  background-size: cover;
+}
+
+.linus {
+  background-image: url('https://media.newyorker.com/photos/5ba177da9eb2f7420aadeb98/1:1/w_1003,h_1003,c_limit/Cohen-Linus-Torvalds.jpg');
+  background-position: center;
+  background-size: cover;
+}
